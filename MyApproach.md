@@ -35,8 +35,7 @@ With regards to testing, I will use RSpec and capybara.
 
 ---------------------------------------
 Working Notes:
-1- Figure out how to import/parse a text file. I've done this before for csv files, but never for text.
-
+1- Figure out how to import/parse a text file. I've done this before for csv files, but never for text. Since the file is huge, I will take a simplified approach and create a different version of the file that only has 30 votes. Once I get this to work, I can expand it to include the rest of the data set. I will create a file called public/load_data.rb to handle all the logic.
 
 
 
