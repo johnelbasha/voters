@@ -28,6 +28,10 @@ Things you may want to cover:
 
 run `rails s`
 
+* Guide to my approach
+
+please checkout the file `MyApproach.md` in the root directory.
+
 ## Specifications
 
 Deliverables:
