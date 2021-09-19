@@ -1,0 +1,32 @@
+<div class="pt-5">
+  <h1>Campaign Results</h1>
+
+  <h2><%= @campaign.campaign_key %></h2>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @campaign.campaign_canidate_results.each_with_index do |result, index| %>
+        <% if (result.candidate.name != "VOID") %>
+          <tr>
+            <th scope="row"><%= index + 1 %> </th>
+            <td><%= result.candidate.name %> </td>
+            <td><%= result.Votes %> </td>
+          </tr>
+        <% end %>
+      <% end %>
+      </tbody>
+    </table>
+    <h3><%= @void_vote_count %> Uncounted votes</h3>
+  </div>
+
+  <%= link_to 'Back', root_path, class: "btn btn-primary" %>
+
+</div>
