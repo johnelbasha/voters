@@ -31,7 +31,19 @@ With regards to testing, I will use RSpec and capybara.
 Working Notes:
 1- Figure out how to import/parse a text file. I've done this before for csv files, but never for text. Since the file is huge, I will take a simplified approach and create a different version of the file that only has 30 votes. Once I get this to work, I can expand it to include the rest of the data set. I will create a file called public/load_data.rb to handle all the logic. A now Regex!! Its been a long time, so I had to look up a few resources to remember who to extract the data I wanted. Considering the task is meant to be done in less than 2 hours, I will forgo using a regex pattern and will do it a longer way. I have put the script to parse the votes.txt file into the database in the /db/seed file. this means when you want to import the data, you need to follow these steps: 1) move your votes.txt file into the "public" folder. 2) in the terminal: "rails db:migrate" followed by "rails db:seed". This final command may take a few minutes to complete. So far I have not used any TDD because I had to do a bit of trial and error to figure out the design.
 
-2- To develop the UI, I will be using both RSpec and Capybara. I'll start off by installing these gems and ensuring they work as expected. I created a folder within spec called "features" to store all the features that will drive the UI implementation.
+2- To develop the UI, I will be using both RSpec and Capybara. I'll start off by installing these gems and ensuring they work as expected. I created a folder within spec called "features" to store all the features that will drive the UI implementation. There are two feature specs that drive all the UI. The first one tests that the index page shows all the campaigns whilst the second ones tests that someone can click on an individual link to go to a show page that reveals the results of that campaign.
+
+3- I've made some validations and associations in the models but those don't have unit tests yet. Given more time, I would have used TDD to develop unit tests for these.
+
+4- To make the UI a bit attractive, I integrated the Bootstrap 5 library using a gem.
+
+5- There is certaintely a lot of room for refactoring the code which is what I would do given more time.
+
+6- I made a few typos during development and didn't have the time to correct them. You will see that the controller and model feature the word "canidate" which should be "candidate". To save time, I didn't correct this.
+
+7- Other bugs include migrations that were not needed (_model / _create_votes)
+
+
 
 
 

@@ -7,19 +7,27 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
-
-* Configuration
+  Ruby 2.6.6
 
 * Database creation
 
+  `rails db:create`
+  `rails db:migrate`
+
 * Database initialization
 
+  copy your `votes.txt` file into the `/public` directory
+  `rails db:migrate` (this could take 2-3 mins)
+
 * How to run the test suite
+
+  `rspec`
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+`rails s`
 
 ## Specifications
 
