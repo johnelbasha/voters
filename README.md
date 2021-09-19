@@ -11,23 +11,22 @@ Things you may want to cover:
 
 * Database creation
 
-  `rails db:create`
-  `rails db:migrate`
+  run `rails db:create`
+  run `rails db:migrate`
 
 * Database initialization
 
-  copy your `votes.txt` file into the `/public` directory
+  copy your `votes.txt` file into the `/public` directory, then run 
   `rails db:migrate` (this could take 2-3 mins)
 
 * How to run the test suite
 
-  `rspec`
+  run `rspec`
 
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-`rails s`
+run `rails s`
 
 ## Specifications
 
