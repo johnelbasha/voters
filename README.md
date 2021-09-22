@@ -9,6 +9,11 @@ Things you may want to cover:
 
   Ruby 2.6.6
 
+* Install dependecies
+
+run 'bundle install'
+run 'yarn install'
+
 * Database creation
 
   run `rails db:create`
@@ -17,7 +22,7 @@ Things you may want to cover:
 * Database initialization
 
   copy your `votes.txt` file into the `/public` directory, then run 
-  `rails db:migrate` (this could take 2-3 mins)
+  `rails db:migrate` (this could take 2-5 mins, grab a coffee!)
 
 * How to run the test suite
 

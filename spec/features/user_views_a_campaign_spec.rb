@@ -28,7 +28,6 @@ RSpec.feature 'View an individual campaign' do
     expect(page).to have_content(@c_c_r_two.Votes)
     expect(page).to have_content(@candidate_three.name)
     expect(page).to have_content(@c_c_r_three.Votes)
-    expect(page).to have_content(@candidate_void.name)
     expect(page).to have_content(@c_c_r_four.Votes)
   end
 end
