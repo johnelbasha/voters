@@ -10,9 +10,8 @@ Things you may want to cover:
   Ruby 2.6.6
 
 * Install dependecies
-
-run 'bundle install'
-run 'yarn install'
+  run 'bundle install'
+  run 'yarn install'
 
 * Database creation
 
@@ -31,7 +30,7 @@ run 'yarn install'
 
 * Deployment instructions
 
-run `rails s`
+  run `rails s`
 
 * Guide to my approach
 
