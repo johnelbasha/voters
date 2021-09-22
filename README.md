@@ -11,12 +11,14 @@ Things you may want to cover:
 
 * Install dependecies
 
-  run `bundle install`
+  run `bundle install` 
+  then
   run `yarn install`
 
 * Database creation
 
-  run `rails db:create`
+  run `rails db:create` 
+  then
   run `rails db:migrate`
 
 * Database initialization
