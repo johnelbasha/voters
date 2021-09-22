@@ -15,7 +15,7 @@ end_locator = "CONN:"
 VALID_VOTE_MARKER = "during"
 
 
-File.open("public/sample.txt", "r").each_line do |line|
+File.open("public/votes.txt", "r").each_line do |line|
   if line.start_with?(vote_string_prefix) # add other validations to this if statement
     stringVotes << line
   end
